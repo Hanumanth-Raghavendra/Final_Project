@@ -1,0 +1,456 @@
+/* Basic styling for overall layout and elements */
+body {
+    font-family: 'Gabarito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+main {
+    padding: 40px 0;
+    
+}
+
+header {
+    background-color: black;
+}
+
+/* Basic Styling for Homepage */
+
+.Logo {
+    width: 4rem;
+}
+
+.navbar {
+    color: black;
+    background-color: #b3ffd0;
+    border-color: #02ff63;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+}
+
+.nav-item {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.nav-item:hover {
+    color: #ffffff;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    background-color: #f0f0f0;
+}
+
+.btn {
+    color: black;
+    background-color: #02ff63;
+    border-color: #02ff63;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    border-color: #02ff63;
+    color: #333;
+}
+
+.hero-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.display-4 {
+    font-family: 'Protest Riot', sans-serif;
+}
+
+.custom-carousel {
+    width: 60%;
+    margin: 0 auto;
+    /* Center the carousel horizontally */
+}
+
+.carousel-inner .carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.carousel-caption p {
+    margin-bottom: 2px;
+}
+
+.about-page {
+    background-image: url('Images/trianglify-lowres.png');
+}
+
+.text-center {
+    color: #000000;
+    margin-top: 15px;
+    padding-bottom: 40px;
+    font-family: 'Kalam', cursive;
+}
+
+.card-text {
+    color: #000000;
+    font-family: 'Kalam', cursive;
+    list-style-type: none;
+}
+
+.college-link {
+    text-align: center;
+}
+
+.here {
+    font-family: 'Kalam', cursive;
+    color: black;
+    background-color: #02ff63;
+    border-color: #02ff63;
+    padding: 8px 22px;
+}
+
+.here:hover {
+    background-color: #ffffff;
+    border-color: #02ff63;
+    color: #333;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-thumbnail {
+    width: 15rem;
+}
+
+.fig-caption {
+    font-family: 'Kalam', cursive;
+    display: inline;
+    margin-top: 40px;
+}
+
+.image-text {
+    padding-top: 50px !important;
+    text-align: center;
+}
+
+.feature-item {
+    flex-basis: 100%;
+}
+
+.feature-left:nth-child(even),
+.feature-right:nth-child(odd) {
+    flex-basis: 50%;
+    flex-grow: 1;
+}
+
+.cta {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Basic styling for the about page */
+.about-us {
+    padding: 30px 0;
+}
+
+.about-image {
+    width: 350px;
+    height: 350px;
+}
+
+.flip-card {
+    margin-bottom: 30px;
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: rgba(rgb(255, 215, 215), rgb(158, 230, 158), rgb(249, 249, 255), 1);
+    color: black;
+    transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 768px) {
+    .about-us {
+        padding: 20px 0;
+    }
+
+    .about-image {
+        width: 300px;
+        height: 300px;
+    }
+
+    .flip-card {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* Basic Styling For Editor Page */
+.editor_body {
+    display: flex;
+    padding: 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #E3F2FD;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container_editor {
+    width: 850px;
+    padding: 30px 35px 35px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container_editor.disable .editor-panel,
+.container_editor.disable .controls .reset-filter,
+.container_editor.disable .controls .save-img {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.container_editor h2 {
+    margin-top: -8px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.container_editor .wrapper {
+    display: flex;
+    margin: 20px 0;
+    min-height: 335px;
+}
+
+.wrapper .editor-panel {
+    padding: 15px 20px;
+    width: 280px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.editor-panel .title {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.editor-panel .options,
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.editor-panel button {
+    outline: none;
+    height: 40px;
+    font-size: 14px;
+    color: #6C757D;
+    background: #fff;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    border: 1px solid #aaa;
+}
+
+.editor-panel .filter button {
+    width: calc(100% / 2 - 4px);
+}
+
+.editor-panel button:hover {
+    background: #f5f5f5;
+}
+
+.filter button.active {
+    color: #000000;
+    border-color: #02ff63;
+    background: #02ff63;
+}
+
+.filter .slider {
+    margin-top: 12px;
+}
+
+.filter .slider .filter-info {
+    display: flex;
+    color: #464646;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.filter .slider input {
+    width: 100%;
+    height: 5px;
+    accent-color: #02ff63;
+}
+
+.editor-panel .rotate {
+    margin-top: 17px;
+}
+
+.editor-panel .rotate button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - 3px);
+}
+
+.rotate .options button:nth-child(3),
+.rotate .options button:nth-child(4) {
+    font-size: 18px;
+}
+
+.rotate .options button:active {
+    color: #fff;
+    background: #02ff63;
+    border-color: #5372F0;
+}
+
+.wrapper .preview-img {
+    flex-grow: 1;
+    display: flex;
+    overflow: hidden;
+    margin-left: 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-img .plus-symbol {
+    border: #464646;
+    border-color: #464646;
+    border-style: dashed;
+    max-width: 420px;
+    max-height: 335px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.controls button {
+    padding: 11px 20px;
+    font-size: 14px;
+    border-radius: 3px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    background: none;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.controls .reset-filter {
+    color: #6C757D;
+    border: 1px solid #6C757D;
+}
+
+.controls .reset-filter:hover {
+    color: #fff;
+    background: #6C757D;
+}
+
+.controls .choose-img {
+    background: rgb(44, 44, 251);
+    border: 1px solid #6C757D;
+    transition: transform .2s;
+}
+
+.controls:hover .choose-img:hover {
+    transform: scale(1.08);
+}
+
+.controls .save-img {
+    margin-left: 5px;
+    color: #000000;
+    background: #02ff63;
+    border: 1px solid #02ff63;
+}
+
+@media screen and (max-width: 760px) {
+    .container_editor {
+        padding: 25px;
+    }
+
+    .container_editor .wrapper {
+        flex-wrap: wrap-reverse;
+    }
+
+    .wrapper .editor-panel {
+        width: 100%;
+    }
+
+    .wrapper .preview-img {
+        width: 100%;
+        margin: 0 0 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .controls button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .controls .row {
+        width: 100%;
+    }
+
+    .controls .row .save-img {
+        margin-left: 0px;
+    }
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="Images/Logo.png">
+    <title>Contact us Page</title>
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+}
+
+/* banner section styles */
+.banner {
+	text-align: center;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+
+.banner img {
+	max-width: 100%;
+	height: auto;
+}
+/* Contact form styles */
+.contact-form {
+	padding: 40px 0;
+	margin: 0 10px;
+}
+
+.form-container {
+	max-width: 40%;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+.form-container label {
+	display:block;
+	font-weight: bold;
+}
+.form-container input, textarea{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 1rem;
+	resize: vertical;
+}
+.submit-button {
+	margin: auto 40%;
+	padding: 10px 20px;
+	color: black;
+    background-color: #02ff63;
+    border-color: #02ff63;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ffffff;
+    border-color: #02ff63;
+    color: #333;
+}
+
+/* Contact info styles */
+.contact-info {
+	padding: 50px 0;
+	background-color: #f7f7f7;
+}
+
+.contact-info-div {
+	display: flex;
+}
+
+.contact-info h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.first {
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.second {
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+/* Footer styles */
+footer {
+	padding: 15px;
+	text-align: center;
+	background-color: #333;
+	color: white;
+}
+
+.contact-info-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.address {
+    flex: 1;
+    margin: 10px 10px;
+}
+
+/* Style for the footer redirects */
+.footer-redirect {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.redirect-1 {
+	margin-top: 2px;
+	width: 42px;
+	margin-right: 20px;
+}
+
+.redirect {
+	margin-top: 5px;
+	margin-right: 20px;
+	width: 40px;
+}
+
+.redirect-2 {
+	width: 50px;
+}
+
+.redirect-3 {
+	margin-top: 5px;
+	width: 40px;
+	margin-right: 10px;
+}
+
+
+/* Media queries for responsiveness */
+/* @media only screen and (max-width: 768px) {
+	.logo {
+		display: none;
+	}
+
+	.hamburger {
+		display: flex;
+	}
+
+	#nav-menu {
+		position: absolute;
+		top: 4rem;
+		left: 0;
+		background-color: #333;
+		width: 100%;
+		display: none;
+	}
+
+	#nav-menu.active {
+		display: block;
+		flex-direction: row;
+		padding: 1rem;
+	}
+} */
+
+    </style>
+</head>
+
+<body>
+    <section class="banner">
+        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230822131732/images.png"
+            alt="Welcome to our Contact Us page">
+        <h1>Get in Touch With Us</h1>
+        <p>
+            We're here to answer any questions you may have.
+        </p>
+    </section>
+
+    <!-- Contact form -->
+    <section class="contact-form">
+        <div class="form-container">
+            <h2>Your Details</h2>
+            <form action="https://formspree.io/f/mnqelgde" method="POST" onsubmit="sendEmail()">
+
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone: </label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <div class="contact-info-div">
+			<address class="first">
+				Phone: <a href="tel:1234567890">7207031246</a><br>
+				Email: <a href="mailto:raghavendra.boienpally@gmail.com">raghavendra.boienpally@gmail.com</a>
+				<div class="footer-redirect">
+					<a target="_blank" href="https://wa.me/7207031246"><img class="redirect-1" src="Images/whatsapp.png" alt="whatsapp"></a>
+					<a target="_blank" href="https://www.instagram.com/hanumanth_raghavendra/"><img class="redirect" src="Images/instagram.png" alt="instagram"></a>
+					<a target="_blank" href="https://www.linkedin.com/in/hacking-panda/"><img class="redirect-3" src="Images/linkedin.png" alt="linkedin"></a>
+					<a target="_blank" href="https://github.com/Hanumanth-Raghavendra"><img class="redirect-2" src="Images/github (2).png" alt="github"></a>
+				</div>
+			</address>
+			<address class="second">
+				Phone: <a href="tel:1234567890">9704495514</a><br>
+				Email: <a href="mailto:rumandlakarthik54@gmail.com">rumandlakarthik54@gmail.com</a>
+				<div class="footer-redirect">
+					<a target="_blank" href="https://wa.me/9704495514"><img class="redirect-1" src="Images/whatsapp.png" alt="whatsapp"></a>
+					<a target="_blank" href="https://www.instagram.com/rumandla_karthik/"><img class="redirect" src="Images/instagram.png" alt="instagram"></a>
+					<a target="_blank" href="https://www.linkedin.com/in/rumandla-karthik-695736229/"><img class="redirect-3" src="Images/linkedin.png" alt="linkedin"></a>
+					<a target="_blank" href="https://github.com/rumandla-karthik-54"><img class="redirect-2" src="Images/github (2).png" alt="github"></a>
+				</div>
+			</address>
+		</div>
+    </section>
+</body>
+
+</html>
